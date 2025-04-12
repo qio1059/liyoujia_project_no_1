@@ -27,10 +27,11 @@ liyoujia_project_no_1/
 ├── checkpoints/              # 训练好的模型权重保存目录
 │   ├── best_model.pkl        # 保存的最佳模型权重（通过验证集指标保存）
 │
-├── experiments/              # 实验结果目录
-│   ├── loss_curve.png        # 可视化的训练/验证集损失曲线
-│   ├── accuracy_curve.png    # 可视化的验证集准确率曲线
-│   ├── first_layer_weights   # 第一层权重的可视化图像
+├── outputs/                  # 可视化结果
+│   ├── loss curve & validation accuracy.png      
+│   ├── weights_Layer1.png   
+│   ├── weights_Layer2.png   
+│   ├── weights_Layer3.png   
 │
 ├── README.md                 # 项目说明文档，包含训练和测试的使用说明
 ```
