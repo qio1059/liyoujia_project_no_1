@@ -36,13 +36,13 @@ liyoujia_project_no_1/
 ├── README.md                 # 项目说明文档，包含训练和测试的使用说明
 ```
 
-## 数据集
+## Dataset
+
 CIFAR-10 数据集可以通过官方页面下载并解压
    ```bash
    python -c "from dataset import download_and_extract_cifar10; download_and_extract_cifar10()"
 ```
-下载后将数据存储在 data/ 文件夹中。  
-并将其解压到名为cifar-10-batches-py的文件夹中  
+
 
 ## Usage
 1. Clone the repository:
