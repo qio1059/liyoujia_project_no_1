@@ -45,13 +45,16 @@ CIFAR-10 数据集可以通过官方页面下载并解压
    git clone https://github.com/your-username/three-layer-nn-cifar10.git
    cd three-layer-nn-cifar10
    
-3. Install dependencies:
+2. Install dependencies:
+   ```bash
    pip install numpy matplotlab
 
-4. Train the model:
+3. Train the model:
+   ```bash
    python source/main.py
 
-5. Test the model:
+4. Test the model:
+   ```bash
    python source/test.py
 
 
