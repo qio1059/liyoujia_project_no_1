@@ -14,7 +14,7 @@ liyoujia_project_no_1/
 ├── data/                     # 数据存放目录
 │   ├── cifar-10-batches-py/  # CIFAR-10 数据集解压后的文件夹（自动生成）
 │
-├── source/                      # 源代码目录
+├── source/                   # 源代码目录
 │   ├── dataset.py            # 数据加载和预处理代码
 │   ├── model.py              # 三层神经网络模型代码
 │   ├── train.py              # 训练和验证代码
