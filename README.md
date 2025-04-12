@@ -1,33 +1,55 @@
 # CIFAR-10 训练与分类
 这是一个实现三层神经网络模型(Three-layer neural network from scratch for CIFAR-10 classification)，进行 CIFAR-10 数据集分类的项目。该项目使用NumPy来实现神经网络，并进行图像分类任务。模型训练过程中采用了数据增强、SGD 优化器、学习率衰减、交叉熵损失和 L2 正则化等技术。
 
-## 项目结构
-cifar_nn/  
-├── model.py           # 三层神经网络模型定义   
-├── train.py           # 训练主逻辑（包含验证）  
-├── test.py            # 测试准确率评估  
-├── utils.py           # 工具函数（如数据预处理、权重初始化等）  
-├── hyperparams.py     # 超参数查找逻辑  
-├── visualize.py       # 可视化训练曲线和权重模式  
-├── checkpoint/        # 保存模型权重  
-├── data/              # 下载并处理后的CIFAR-10数据  
-└── main.py            # 训练模型以及可视化结果 
+## Features
+- Manual implementation of forward and backward propagation
+- Support for SGD optimizer, learning rate scheduling, and L2 regularization
+- Hyperparameter tuning and visualization of results
+
+## Directory Structure
+liyoujia_project_no_1/
+│
+├── data/                         # 数据存放目录
+│   ├── cifar-10-batches-py/      # CIFAR-10 数据集解压后的文件夹
+│
+├── source/                       # 源代码目录
+│   ├── dataset.py                # 数据加载和预处理代码
+│   ├── model.py                  # 三层神经网络模型代码
+│   ├── train.py                  # 训练和验证代码
+│   ├── test.py                   # 测试代码
+│   ├── utils.py                  # 工具函数，如可视化、日志处理等
+│   ├── main.py                   # 主程序入口，整合训练、验证、测试流程
+│   ├── hyperparams.py            # 定义和管理超参数
+│
+├── checkpoints/                  # 训练好的模型权重保存目录
+│   ├── best_model.pkl            # 保存的最佳模型权重（通过验证集指标保存）
+│
+├── outputs/                      # 实验结果目录
+│   ├── loss_curve.png            # 可视化的训练/验证集损失曲线
+│   ├── accuracy_curve.png        # 可视化的验证集准确率曲线
+│   ├── hyperparameters.txt       # 记录不同超参数下的实验结果
+│   ├── first_layer_weights.png   # 记录不同超参数下的实验结果
+│
+├── README.md                     # 项目说明文档，包含训练和测试的使用说明
 
 ## 数据集
-
 CIFAR-10 数据集可以通过官方页面下载并解压
 下载后将数据存储在 data/ 文件夹中。  
 并将其解压到名为cifar-10-batches-py的文件夹中  
 
-## 训练模型
-python main.py  
-训练时会显示每个 epoch 的损失值和验证集准确率，并根据验证集准确率保存最佳模型。
-训练完成后，可以使用测试集评估模型的准确率
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/three-layer-nn-cifar10.git
+   cd three-layer-nn-cifar10
+   
+3. Install dependencies:
+   pip install numpy matplotlab
 
-## 测试模型
-python test.py
+4. Train the model:
+   python source/main.py
 
-## 超参数调优
-可以使用 hyperparams.py 进行超参数搜索，以选择最优的学习率、批次大小、训练轮数等。
-运行以下命令进行超参数搜索：  
-python hyperparams.py
+5. Test the model:
+   python source/test.py
+
+
