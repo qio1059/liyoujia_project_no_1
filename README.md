@@ -62,4 +62,19 @@ CIFAR-10 数据集可以通过官方页面下载并解压
    ```bash
    python source/test.py
 
+## 模型权重下载
+训练好的模型权重已上传至云盘：
+- **百度网盘**: [下载链接]（https://pan.baidu.com/s/1SJA3qrCe_04EergyW1OA3A?pwd=cr3c 提取码: cr3c）
 
+使用方式：
+```python
+import pickle
+
+with open('best_model.pkl', 'rb') as f:
+    weights = pickle.load(f)
+    
+# 加载到模型中
+model.fc1.W, model.fc1.b = weights['W1'], weights['b1']
+model.fc2.W, model.fc2.b = weights['W2'], weights['b2']
+model.fc3.W, model.fc3.b = weights['W3'], weights['b3']
+```
