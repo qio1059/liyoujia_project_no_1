@@ -8,31 +8,23 @@
 
 ## Directory Structure
 liyoujia_project_no_1/
-three-layer-nn-cifar10/
-│
-├── data/                     # 数据存放目录
-│   ├── cifar-10-batches-py/  # CIFAR-10 数据集解压后的文件夹（自动生成）
-│
-├── src/                      # 源代码目录
-│   ├── dataset.py            # 数据加载和预处理代码
-│   ├── model.py              # 三层神经网络模型代码
-│   ├── train.py              # 训练和验证代码
-│   ├── test.py               # 测试代码
-│   ├── utils.py              # 工具函数，如可视化、日志处理等
-│   ├── main.py               # 主程序入口，整合训练、验证、测试流程
-│
-├── checkpoints/              # 训练好的模型权重保存目录
-│   ├── best_model.pkl        # 保存的最佳模型权重（通过验证集指标保存）
-│
-├── experiments/              # 实验结果目录
-│   ├── loss_curve.png        # 可视化的训练/验证集损失曲线
-│   ├── accuracy_curve.png    # 可视化的验证集准确率曲线
-│   ├── hyperparameters.txt   # 记录不同超参数下的实验结果
-│
-├── README.md                 # 项目说明文档，包含训练和测试的使用说明
-├── requirements.txt          # 项目依赖，用于安装必要的 Python 包
-├── report.pdf                # 实验报告，包含详细的实验设计、结果和分析
-├── .gitignore                # Git 忽略文件，避免上传无关内容
+├── three-layer-nn-cifar10/
+│   ├── data/                # Data storage directory
+│       ├── cifar-10-batches-py # Extracted CIFAR-10 dataset files (auto-generated)
+│   ├── source/              # Source code directory
+│       ├── dataset.py       # Data loading and preprocessing code
+│       ├── model.py         # Three-layer neural network model code
+│       ├── train.py         # Training and validation code
+│       ├── test.py          # Testing code
+│       ├── utils.py         # Utility functions (e.g., visualization, logging)
+│       ├── main.py          # Main entry point for training, validation, and testing
+│   ├── checkpoints/         # Directory for saving trained model weights
+│       ├── best_model.pkl   # Best model weights (saved by validation metrics)
+│   ├── outputs/             # Experiment results directory
+│       ├── loss_curve.png   # Training/validation loss curve visualization
+│       ├── accuracy_curve.png # Validation accuracy curve visualization
+│       ├── hyperparameters.txt # Experimental results under different hyperparameters
+│   ├── README.md            # Project documentation with training/testing instructions
 
 ## 数据集
 CIFAR-10 数据集可以通过官方页面下载并解压
