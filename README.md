@@ -1,5 +1,6 @@
-# CIFAR-10 训练与分类
-- 这是一个实现三层神经网络模型(Three-layer neural network from scratch for CIFAR-10 classification)，进行 CIFAR-10 数据集分类的项目。该项目使用NumPy来实现神经网络，并进行图像分类任务。模型训练过程中采用了数据增强、SGD 优化器、学习率衰减、交叉熵损失和 L2 正则化等技术。
+# Three-Layer Neural Network for CIFAR-10
+
+This repository contains a three-layer neural network implemented from scratch using NumPy, designed for image classification on the CIFAR-10 dataset.
 
 ## Features
 - Manual implementation of forward and backward propagation
