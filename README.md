@@ -41,6 +41,7 @@ CIFAR-10 数据集可以通过官方页面下载并解压
 
 下载后将数据存储在 data/ 文件夹中。  
 并将其解压到名为cifar-10-batches-py的文件夹中  
+```
 
 ## Usage
 1. Clone the repository:
