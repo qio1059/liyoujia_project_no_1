@@ -8,6 +8,7 @@
 
 ## Directory Structure
 liyoujia_project_no_1/
+three-layer-nn-cifar10/
 │
 ├── data/                     # 数据存放目录
 │   ├── cifar-10-batches-py/  # CIFAR-10 数据集解压后的文件夹（自动生成）
@@ -19,7 +20,6 @@ liyoujia_project_no_1/
 │   ├── test.py               # 测试代码
 │   ├── utils.py              # 工具函数，如可视化、日志处理等
 │   ├── main.py               # 主程序入口，整合训练、验证、测试流程
-│   ├── hyperparams.py        # 调参
 │
 ├── checkpoints/              # 训练好的模型权重保存目录
 │   ├── best_model.pkl        # 保存的最佳模型权重（通过验证集指标保存）
@@ -30,7 +30,9 @@ liyoujia_project_no_1/
 │   ├── hyperparameters.txt   # 记录不同超参数下的实验结果
 │
 ├── README.md                 # 项目说明文档，包含训练和测试的使用说明
-
+├── requirements.txt          # 项目依赖，用于安装必要的 Python 包
+├── report.pdf                # 实验报告，包含详细的实验设计、结果和分析
+├── .gitignore                # Git 忽略文件，避免上传无关内容
 
 ## 数据集
 CIFAR-10 数据集可以通过官方页面下载并解压
