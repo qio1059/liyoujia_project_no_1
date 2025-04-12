@@ -30,7 +30,6 @@ liyoujia_project_no_1/
 ├── experiments/              # 实验结果目录
 │   ├── loss_curve.png        # 可视化的训练/验证集损失曲线
 │   ├── accuracy_curve.png    # 可视化的验证集准确率曲线
-│   ├── hyperparameters.txt   # 记录不同超参数下的实验结果
 │   ├── first_layer_weights   # 第一层权重的可视化图像
 │
 ├── README.md                 # 项目说明文档，包含训练和测试的使用说明
