@@ -1,6 +1,7 @@
 # Three-Layer Neural Network for CIFAR-10
 
 This repository contains a three-layer neural network implemented from scratch using NumPy, designed for image classification on the CIFAR-10 dataset.
+![CIFAR-10 Datasets](https://github.com/user-attachments/assets/642090c3-53af-449d-afcf-74f5ca8db477)
 
 ## Features
 - Manual implementation of forward and backward propagation
